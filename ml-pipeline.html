@@ -1,134 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A machine learning pipeline that classifies records into multiple classes, comparing four models on a dataset of roughly 70,000 samples.">
-<title>Multi-Class Classification ML Pipeline - Keta Patel</title>
-<script>document.documentElement.className="js";</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=v4">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Class Classification Pipeline | Keta Patel</title>
+  <meta name="description" content="Four model families, one shared pipeline, and a fair comparison on about 70,000 samples.">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=9">
 </head>
-<body>
-<div class="wipe cover" aria-hidden="true"><i style="--k:0"></i><i style="--k:1"></i><i style="--k:2"></i><i style="--k:3"></i><i style="--k:4"></i></div>
-<div class="scroll-progress" aria-hidden="true"></div>
-<div class="cursor" aria-hidden="true"></div><div class="cursor-dot" aria-hidden="true"></div>
-<header class="nav"><nav class="nav-pill" aria-label="Primary">
-  <a class="brand" href="index.html"><b>KP</b>Keta Patel</a>
-  <ul class="nav-links">
-    <li><a href="index.html#projects">Projects</a></li><li><a href="index.html#journey">Journey</a></li><li><a href="index.html#skills">Skills</a></li><li><a href="index.html#about">About</a></li><li><a href="index.html#contact">Contact</a></li>
-  </ul>
-  <button class="menu-btn" type="button" aria-expanded="false" aria-label="Menu">Menu</button>
-  <a class="nav-cta" href="mailto:kpate650@uic.edu">Email</a>
-</nav></header>
-
-<main>
-<section class="d-hero">
-  <div class="cloud a" data-depth="12" aria-hidden="true"><i></i><i></i><i></i></div><div class="cloud b" data-depth="20" aria-hidden="true"><i></i><i></i><i></i></div>
-  <div class="grain" aria-hidden="true"></div>
-  <div class="wrap">
-    <a class="back reveal" href="index.html#projects"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m6-6-6 6 6 6"/></svg> All projects</a>
-    <p class="kicker reveal" style="margin-top:34px;--d:60ms">Machine Learning</p>
-    <h1 class="d-title reveal" style="--d:120ms">Multi-Class Classification ML Pipeline</h1>
-    <p class="d-sum reveal" style="--d:200ms">A machine learning pipeline that classifies records into multiple classes, comparing four models on a dataset of roughly 70,000 samples.</p>
-  </div>
-</section>
-<div class="wrap d-layout">
-  <aside class="side">
-    <div class="ring-card reveal"><div class="ring"><svg viewBox="0 0 120 120"><circle class="bg" cx="60" cy="60" r="54"/><circle class="fg" cx="60" cy="60" r="54" data-pct="100"/></svg><b>100%</b></div><p>4 of 4 phases complete</p></div>
-    <nav class="snav reveal" aria-label="Jump to phase"><a href="#phase-1"><b>1</b>Data Preparation</a><a href="#phase-2"><b>2</b>Model Training</a><a href="#phase-3"><b>3</b>Evaluation & Comparison</a><a href="#phase-4"><b>4</b>Final Report</a></nav>
-    <div class="metas reveal"><div class="meta"><span>Course</span><strong>IDS 575 &middot; Machine Learning and Statistical Methods for Business Analytics</strong></div><div class="meta"><span>Tools</span><strong>Python, Logistic Regression, Random Forest, LightGBM, MLP</strong></div><div class="meta"><span>Scale</span><strong>~70K samples, multi-class target</strong></div></div>
-  </aside>
-  <div class="d-main">
-    <section>
-      <h2 class="reveal">The <em>overview</em></h2>
-      <p class="body reveal">This project, built for IDS 575 at UIC, takes a multi-class classification problem from raw data to a written report. It was completed with a teammate and compares four model families on the same dataset of about 70,000 samples.</p><p class="body reveal">The goal was a clean, repeatable pipeline: the same preparation and evaluation steps applied to every model, so the comparison is fair.</p>
-      <div class="tags reveal"><span class="tag">Python</span><span class="tag">LightGBM</span><span class="tag">Random Forest</span><span class="tag">MLP</span></div>
+<body class="proj">
+  <div class="progress" aria-hidden="true"></div>
+  <header class="nav" id="nav">
+    <nav class="nav-pill" aria-label="Primary">
+      <a class="brand" href="index.html"><span class="mono">KP</span><span class="brand-name">Keta Patel</span></a>
+      <ul><li><a href="index.html#projects">All projects</a></li><li><a href="index.html#experience">Experience</a></li><li><a href="index.html#contact">Contact</a></li></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="ph th-apricot">
+      <div class="wrap ph-in">
+        <div class="ph-copy">
+          <a class="back" href="index.html#projects">&larr; All projects</a>
+          <span class="ph-num">02</span>
+          <span class="kicker sm">Machine learning &middot; Python</span>
+          <h1>Multi-Class Classification Pipeline</h1>
+          <p class="ph-lead">Four model families, one shared pipeline, and a fair comparison on about 70,000 samples.</p>
+          <dl class="meta"><div><dt>Course</dt><dd>IDS 575 &middot; Machine Learning</dd></div><div><dt>Type</dt><dd>Team project with a final report</dd></div><div><dt>Tools</dt><dd>Python, scikit-learn, LightGBM</dd></div></dl>
+        </div>
+        <div class="ph-art"><svg viewBox="0 0 400 200" role="img" aria-label="Four models compared"><rect x="22" y="50" width="80" height="100" rx="16" class="tile t0"/><text x="62" y="96" class="tx w">Logistic</text><text x="62" y="112" class="tx w">Regression</text><rect x="114" y="50" width="80" height="100" rx="16" class="tile t1"/><text x="154" y="96" class="tx">Random</text><text x="154" y="112" class="tx">Forest</text><rect x="206" y="50" width="80" height="100" rx="16" class="tile t2"/><text x="246" y="104" class="tx">LightGBM</text><rect x="298" y="50" width="80" height="100" rx="16" class="tile t3"/><text x="338" y="104" class="tx">MLP</text></svg></div>
+      </div>
+    </header>
+    <div class="wrap pbody2">
+      <aside class="toc" aria-label="On this page"><span>On this page</span><a href="#s0">Overview</a><a href="#s2">How it was built</a><a href="#s3">The four models</a></aside>
+      <div class="pcontent">
+        <section class="ps rv" id="s0"><h2>Overview</h2><p>A multi-class classification project built for IDS 575. The aim was to compare four different model families on the same prepared dataset of roughly 70,000 samples, so that differences in results come from the models and not from how the data was handled.</p></section><div class="stats rv" style="--n:3"><div class="st"><b>~70K</b><span>samples</span></div><div class="st"><b>4</b><span>model families</span></div><div class="st"><b>1</b><span>shared pipeline</span></div></div><section class="ps rv" id="s2"><h2>How it was built</h2><ol class="steps"><li><span class="n">1</span><div><h3>Prepare one dataset</h3><p>The data of about 70,000 samples went through a single preprocessing routine, so every model sees identical inputs.</p></div></li><li><span class="n">2</span><div><h3>Train four model families</h3><p>Logistic Regression as a linear baseline, Random Forest as a bagged tree ensemble, LightGBM as gradient boosting, and a multi-layer perceptron (MLP) as a neural network.</p></div></li><li><span class="n">3</span><div><h3>Evaluate them the same way</h3><p>The same evaluation steps were applied to every model, which keeps the comparison fair.</p></div></li><li><span class="n">4</span><div><h3>Write it up</h3><p>The method and findings are documented in a final report written with a teammate.</p></div></li></ol></section><section class="ps rv" id="s3"><h2>The four models</h2><div class="mods"><div class="mod"><b>Logistic Regression</b><span>Linear baseline</span></div><div class="mod"><b>Random Forest</b><span>Bagged decision trees</span></div><div class="mod"><b>LightGBM</b><span>Gradient boosting</span></div><div class="mod"><b>MLP</b><span>Neural network</span></div></div></section>
+      </div>
+    </div>
+    <section class="next th-navy">
+      <div class="wrap">
+        <span class="kicker sm">Next project</span>
+        <a class="next-a" href="text-analytics.html"><span>Advanced Text Analytics</span><i class="go-b"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></i></a>
+      </div>
     </section>
-    <section>
-      <h2 class="reveal">Project <em>phases</em></h2>
-      <div class="p-ctrl reveal"><button class="link-btn" type="button" data-expand-all>Expand all</button><button class="link-btn" type="button" data-collapse-all>Collapse all</button></div>
-      <div class="phases">
-<div class="phase done reveal" id="phase-1">
-  <div class="pcard">
-    <button class="phead" type="button" aria-expanded="false" aria-controls="phase-1-b">
-      <span><span class="plabel">Phase 1 of 4</span><span class="ptitle">Data Preparation</span></span>
-      <span class="pright"><span class="pill done">Complete</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-    </button>
-    <div class="pbody" id="phase-1-b"><div><div class="pin">
-      <p class="obj"><strong>Objective:</strong> Turn the raw ~70K-sample dataset into model-ready features.</p>
-      <div class="pgrid">
-        <div><h4>Key activities</h4><ul><li>Load and inspect the dataset</li><li>Clean and encode features</li><li>Split data for training and evaluation</li></ul></div>
-        <div><h4>Milestones</h4><ul><li>Model-ready dataset</li></ul></div>
-        <div><h4>Deliverables</h4><ul><li>Prepared dataset and preprocessing steps</li></ul></div>
-        <div><h4>Timeline</h4><p class="tbd">Dates to be added.</p></div>
-      </div>
-      <div class="pmeta"><span class="tag">Depends on: None (can start independently)</span></div>
-    </div></div></div>
-  </div>
-</div>
-<div class="phase done reveal" id="phase-2">
-  <div class="pcard">
-    <button class="phead" type="button" aria-expanded="false" aria-controls="phase-2-b">
-      <span><span class="plabel">Phase 2 of 4</span><span class="ptitle">Model Training</span></span>
-      <span class="pright"><span class="pill done">Complete</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-    </button>
-    <div class="pbody" id="phase-2-b"><div><div class="pin">
-      <p class="obj"><strong>Objective:</strong> Train four model types on the same prepared data.</p>
-      <div class="pgrid">
-        <div><h4>Key activities</h4><ul><li>Logistic Regression</li><li>Random Forest</li><li>LightGBM</li><li>Multi-layer perceptron (MLP)</li></ul></div>
-        <div><h4>Milestones</h4><ul><li>All four models trained</li></ul></div>
-        <div><h4>Deliverables</h4><ul><li>Trained model set</li></ul></div>
-        <div><h4>Timeline</h4><p class="tbd">Dates to be added.</p></div>
-      </div>
-      <div class="pmeta"><span class="tag">Depends on: Phase 1</span></div>
-    </div></div></div>
-  </div>
-</div>
-<div class="phase done reveal" id="phase-3">
-  <div class="pcard">
-    <button class="phead" type="button" aria-expanded="false" aria-controls="phase-3-b">
-      <span><span class="plabel">Phase 3 of 4</span><span class="ptitle">Evaluation & Comparison</span></span>
-      <span class="pright"><span class="pill done">Complete</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-    </button>
-    <div class="pbody" id="phase-3-b"><div><div class="pin">
-      <p class="obj"><strong>Objective:</strong> Compare the models on consistent multi-class metrics.</p>
-      <div class="pgrid">
-        <div><h4>Key activities</h4><ul><li>Score each model on held-out data</li><li>Compare results side by side</li></ul></div>
-        <div><h4>Milestones</h4><ul><li>Best-performing approach identified</li></ul></div>
-        <div><h4>Deliverables</h4><ul><li>Comparison tables and charts</li></ul></div>
-        <div><h4>Timeline</h4><p class="tbd">Dates to be added.</p></div>
-      </div>
-      <div class="pmeta"><span class="tag">Depends on: Phase 2</span></div>
-    </div></div></div>
-  </div>
-</div>
-<div class="phase done reveal" id="phase-4">
-  <div class="pcard">
-    <button class="phead" type="button" aria-expanded="false" aria-controls="phase-4-b">
-      <span><span class="plabel">Phase 4 of 4</span><span class="ptitle">Final Report</span></span>
-      <span class="pright"><span class="pill done">Complete</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></span>
-    </button>
-    <div class="pbody" id="phase-4-b"><div><div class="pin">
-      <p class="obj"><strong>Objective:</strong> Explain the method and findings clearly in writing.</p>
-      <div class="pgrid">
-        <div><h4>Key activities</h4><ul><li>Write up the method and results</li><li>Edit for plain, direct wording</li></ul></div>
-        <div><h4>Milestones</h4><ul><li>Report submitted</li></ul></div>
-        <div><h4>Deliverables</h4><ul><li>Final project report</li></ul></div>
-        <div><h4>Timeline</h4><p class="tbd">Dates to be added.</p></div>
-      </div>
-      <div class="pmeta"><span class="tag">Depends on: Phase 3</span></div>
-    </div></div></div>
-  </div>
-</div></div>
-      <div class="pager"><a class="btn" href="index.html#projects">Back to projects</a><div class="grp"><a class="btn primary" href="walmart-capstone.html">Next project &rarr;</a></div></div>
-      <div class="foot-light"><span>&copy; 2026 Keta Patel</span><a href="mailto:kpate650@uic.edu">kpate650@uic.edu</a></div>
-    </section>
-  </div>
-</div>
-</main>
-<script src="script.js?v=v4"></script>
+  </main>
+  <footer class="pfoot wrap"><span>&copy; 2026 Keta Patel</span><a href="index.html#projects">Back to all projects &uarr;</a></footer>
+  <script src="project.js?v=9"></script>
 </body>
 </html>
